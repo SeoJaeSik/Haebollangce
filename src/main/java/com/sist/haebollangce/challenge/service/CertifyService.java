@@ -340,7 +340,7 @@ public class CertifyService implements InterCertifyService {
     			&& MyUtil.DateChecker(startDate, fk_during_type)) {
     		// 3가지의 인증조건이 다맞는 경우
     		
-    		int checkCertify = 0;//dao.checkTodayCertify(paraMap);
+    		int checkCertify = dao.checkTodayCertify(paraMap);
     		// 오늘 인증하였는지 체크 / return 1이면 오늘 인증 한 것
     		
     		if ( checkCertify >= 1) {
