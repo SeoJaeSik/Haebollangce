@@ -104,7 +104,7 @@
                                 <div class="admin-line">
                                     <div class="cert" data-toggle="popover" data-placement="left" title="이번달 판매순위 정보제공" data-html="true" data-content="<div></div><div>챌린지 인증방법</div>">\${item.certifyNo}</div>
                                     <div class="content">\${item.reportContent}</div>
-                                    <div class="pic"><img src="\${item.certifyImg}"/></div>
+                                    <div class="pic"><img style="width: 250px; height: 200px;" src="/images/certify/\${item.certifyImg}"/></div>
                                 </div>
                             </div>`;
                 });

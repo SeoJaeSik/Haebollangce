@@ -281,7 +281,7 @@
 		    display: flex;
 		    justify-content: center;
 		    align-items: center;
-		    width: 50%;
+		    width: 20%;
 		    height: 48px;
 		    background-color: #f43630;
 		    color: #fff;
@@ -454,15 +454,12 @@
 		
 		<div class="Banner_baner">
 		
-			
-			<div class="banner_content">
-
 				<c:if test="${userid == '' || challengedto.checkJoinUser != 1}">
 					<button class="challenge_join" type="button" onclick="participate()">챌린지 참가</button>
 				</c:if>
 				
 				<c:if test="${userid != '' && challengedto.checkJoinUser != 0}">
-					<button class="challenge_join" type="button" onclick="location.href='<%=ctxPath%>/challenge/certifyList'">챌린지 인증하기</button>
+					<button class="challenge_join" type="button" onclick="location.href='<%=ctxPath%>/challenge/certify?challenge_code=${challengedto.challengeCode}'">챌린지 인증하기</button>
 				</c:if>
 
 			</div>
@@ -470,7 +467,8 @@
 		</div>	
 	</div>
   	</div>
-	</div>   
+  
+
 <script>
 
 	//전역 변수로 선택된 아이콘을 저장할 변수 선언
